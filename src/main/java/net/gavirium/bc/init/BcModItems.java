@@ -8,10 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
-import net.gavirium.bc.item.VoidBundleItem;
-import net.gavirium.bc.item.MobBagItem;
-import net.gavirium.bc.item.AntitoolItem;
-import net.gavirium.bc.item.AmethystTrowelItem;
+import net.gavirium.bc.item.*;
 import net.gavirium.bc.BcMod;
 
 public class BcModItems {
@@ -20,11 +17,15 @@ public class BcModItems {
 	public static final DeferredItem<Item> VOID_BUNDLE;
 	public static final DeferredItem<Item> AMETHYST_TROWEL;
 	public static final DeferredItem<Item> MOB_BAG;
+	public static final DeferredItem<Item> VOID_BUCKET;
+	public static final DeferredItem<Item> HARD_HAT_HELMET;
 	static {
 		ANTITOOL = REGISTRY.register("antitool", AntitoolItem::new);
 		VOID_BUNDLE = REGISTRY.register("void_bundle", VoidBundleItem::new);
 		AMETHYST_TROWEL = REGISTRY.register("amethyst_trowel", AmethystTrowelItem::new);
 		MOB_BAG = REGISTRY.register("mob_bag", MobBagItem::new);
+		VOID_BUCKET = REGISTRY.register("void_bucket", VoidBucketItem::new);
+		HARD_HAT_HELMET = REGISTRY.register("hard_hat_helmet", HardHatItem.Helmet::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "c": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "result": {
+    "id": "bc:mob_bag",
+    "count": 1
+  }
+}

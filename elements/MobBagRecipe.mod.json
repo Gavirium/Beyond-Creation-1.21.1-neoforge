@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.SHULKER_SHELL"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MobBag"
+    },
+    "name": "mob_bag",
+    "namespace": "mod"
+  }
+}

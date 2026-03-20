@@ -78,6 +78,60 @@
         ]
       },
       "path": "~/Gadgets"
+    },
+    {
+      "name": "MobBagRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_bag_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/recipe/mob_bag.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "VoidBucket",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bc/models/item/void_bucket.json",
+          "src/main/java/net/gavirium/bc/item/VoidBucketItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "VoidBucketRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_bucket_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/recipe/void_bucket.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HardHat",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hard_hat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gavirium/bc/item/HardHatItem.java",
+          "src/main/resources/assets/bc/models/item/hard_hat_helmet.json"
+        ]
+      },
+      "path": "~/Gadgets"
     }
   ],
   "variable_elements": [],
@@ -91,14 +145,19 @@
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Antitool"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:HardHat.helmet"
     ]
   },
   "tab_element_order": {
     "CUSTOM:BcTab": [
       "Antitool",
       "AmethystTrowel",
+      "VoidBucket",
       "VoidBundle",
-      "MobBag"
+      "MobBag",
+      "HardHat"
     ]
   },
   "language_map": {
@@ -107,7 +166,9 @@
       "item_group.bc.bc_tab": "Beyond Creation",
       "item.bc.void_bundle": "Void Bundle",
       "item.bc.amethyst_trowel": "Amethyst Trowel",
-      "item.bc.mob_bag": "Mob Bag"
+      "item.bc.mob_bag": "Mob Bag",
+      "item.bc.void_bucket": "Void Bucket",
+      "item.bc.hard_hat_helmet": "Hard Hat"
     }
   },
   "metadata": {
@@ -115,6 +176,7 @@
       "src/main/java/net/gavirium/bc/init/BcModItems.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/gavirium/bc/init/BcModTabs.java",
+      "src/main/java/net/gavirium/bc/init/BcModModels.java",
       "src/main/java/net/gavirium/bc/BcMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml"
     ]

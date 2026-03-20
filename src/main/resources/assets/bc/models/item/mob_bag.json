@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bc:item/mob_bag_empty"
+  },
+  "overrides": [
+    {
+      "predicate": { "bc:has_mob": 1 },
+      "model": "bc:item/mob_bag_full"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "mod_elements": [
+    {
+      "name": "Antitool",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antitool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bc/models/item/antitool.json",
+          "src/main/java/net/gavirium/bc/item/AntitoolItem.java"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "BcTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bc_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "VoidBundle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_bundle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gavirium/bc/item/VoidBundleItem.java",
+          "src/main/resources/assets/bc/models/item/void_bundle.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "VoidBundleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_bundle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/recipe/void_bundle.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AmethystTrowel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "amethyst_trowel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bc/models/item/amethyst_trowel.json",
+          "src/main/java/net/gavirium/bc/item/AmethystTrowelItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "MobBag",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mob_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bc/models/item/mob_bag.json",
+          "src/main/java/net/gavirium/bc/item/MobBagItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Antitool"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Antitool"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Antitool"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:BcTab": [
+      "Antitool",
+      "AmethystTrowel",
+      "VoidBundle",
+      "MobBag"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.bc.antitool": "Antitool",
+      "item_group.bc.bc_tab": "Beyond Creation",
+      "item.bc.void_bundle": "Void Bundle",
+      "item.bc.amethyst_trowel": "Amethyst Trowel",
+      "item.bc.mob_bag": "Mob Bag"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/gavirium/bc/init/BcModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/gavirium/bc/init/BcModTabs.java",
+      "src/main/java/net/gavirium/bc/BcMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Tools",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Gadgets",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "bc",
+    "modName": "Beyond Creation",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.gavirium.bc"
+  },
+  "mcreatorVersion": 202500345720
+}

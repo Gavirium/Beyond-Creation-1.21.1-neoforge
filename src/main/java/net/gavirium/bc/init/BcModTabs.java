@@ -19,9 +19,10 @@ public class BcModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.bc.bc_tab")).icon(() -> new ItemStack(BcModItems.ANTITOOL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BcModItems.ANTITOOL.get());
 				tabData.accept(BcModItems.AMETHYST_TROWEL.get());
+				tabData.accept(BcModItems.PRISMARINE_CHISEL.get());
+				tabData.accept(BcModItems.HARD_HAT_HELMET.get());
 				tabData.accept(BcModItems.VOID_BUCKET.get());
 				tabData.accept(BcModItems.VOID_BUNDLE.get());
 				tabData.accept(BcModItems.MOB_BAG.get());
-				tabData.accept(BcModItems.HARD_HAT_HELMET.get());
 			}).build());
 }

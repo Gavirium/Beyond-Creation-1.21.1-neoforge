@@ -132,6 +132,33 @@
         ]
       },
       "path": "~/Gadgets"
+    },
+    {
+      "name": "PrismarineChisel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "prismarine_chisel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gavirium/bc/item/PrismarineChiselItem.java",
+          "src/main/resources/assets/bc/models/item/prismarine_chisel.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "PrismarineChiselRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prismarine_chisel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/recipe/prismarine_chisel.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -154,10 +181,11 @@
     "CUSTOM:BcTab": [
       "Antitool",
       "AmethystTrowel",
+      "PrismarineChisel",
+      "HardHat",
       "VoidBucket",
       "VoidBundle",
-      "MobBag",
-      "HardHat"
+      "MobBag"
     ]
   },
   "language_map": {
@@ -168,7 +196,8 @@
       "item.bc.amethyst_trowel": "Amethyst Trowel",
       "item.bc.mob_bag": "Mob Bag",
       "item.bc.void_bucket": "Void Bucket",
-      "item.bc.hard_hat_helmet": "Hard Hat"
+      "item.bc.hard_hat_helmet": "Hard Hat",
+      "item.bc.prismarine_chisel": "Prismarine Chisel"
     }
   },
   "metadata": {

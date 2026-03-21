@@ -120,8 +120,10 @@ public class MobBagItem extends Item {
         if (net.minecraft.client.gui.screens.Screen.hasShiftDown()) {
             tooltip.add(Component.literal("§8Hold [§fShift§8] for Summary"));
             tooltip.add(Component.literal(""));
-            tooltip.add(Component.literal("§7Deletes items permanently."));
-            tooltip.add(Component.literal("§7Right-click items to void them."));
+            tooltip.add(Component.literal("§5A spacious bag capable of"));
+            tooltip.add(Component.literal("§5tapping into Hammerspace!"));
+            tooltip.add(Component.literal(""));
+            tooltip.add(Component.literal("§7When used on Mobs"));
         } else {
             tooltip.add(Component.literal("§8Hold [§7Shift§8] for Summary"));
         }
@@ -147,6 +149,7 @@ public class MobBagItem extends Item {
             }
         }
         tooltip.add(Component.literal(""));
+        tooltip.add(Component.literal("§7Contains:"));
         tooltip.add(Component.literal("§9" + name));
     }
 }

@@ -83,7 +83,7 @@ public class MobBagItem extends Item {
         if (level instanceof net.minecraft.server.level.ServerLevel serverLevel) {
             serverLevel.sendParticles(ParticleTypes.CLOUD,target.getX(),target.getY() + target.getBbHeight() / 2.0,target.getZ(),20,0.4,0.4,0.4,0.1);}
         target.discard();
-        return InteractionResult.SUCCESS;
+        return InteractionResult.CONSUME;
     }
 
     // RELEASE LOGIC
@@ -103,7 +103,6 @@ public class MobBagItem extends Item {
         Entity entity = optionalEntity.get();
         BlockPos pos = context.getClickedPos().relative(context.getClickedFace());
         entity.setPos(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5);
-        entity.setYRot(player.getYRot());
         level.addFreshEntity(entity);
         level.playSound(null,pos,net.minecraft.sounds.SoundEvents.BUNDLE_DROP_CONTENTS,SoundSource.PLAYERS,2.0F,0.7F);
         level.playSound(null,pos,net.minecraft.sounds.SoundEvents.ILLUSIONER_CAST_SPELL,SoundSource.PLAYERS,0.2F,2.0F);

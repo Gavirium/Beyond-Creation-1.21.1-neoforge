@@ -1,20 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Antitool",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "antitool",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/bc/models/item/antitool.json",
-          "src/main/java/net/gavirium/bc/item/AntitoolItem.java"
-        ]
-      },
-      "path": "~/Tools"
-    },
-    {
       "name": "BcTab",
       "type": "tab",
       "compiles": true,
@@ -159,6 +145,45 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "AmethystTrowelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_trowel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/recipe/amethyst_trowel.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Antitool",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "antitool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bc/models/item/antitool.json",
+          "src/main/java/net/gavirium/bc/item/AntitoolItem.java"
+        ]
+      },
+      "path": "~/Tools"
+    },
+    {
+      "name": "Photosynthesis",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "photosynthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bc/enchantment/photosynthesis.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -173,35 +198,43 @@
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Antitool"
     ],
-    "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:HardHat.helmet"
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Photosynthesis"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Photosynthesis"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:Photosynthesis"
     ]
   },
   "tab_element_order": {
     "CUSTOM:BcTab": [
-      "Antitool",
       "AmethystTrowel",
       "PrismarineChisel",
       "HardHat",
       "VoidBucket",
       "VoidBundle",
-      "MobBag"
+      "MobBag",
+      "Antitool"
     ]
   },
   "language_map": {
     "en_us": {
-      "item.bc.antitool": "Antitool",
       "item_group.bc.bc_tab": "Beyond Creation",
       "item.bc.void_bundle": "Void Bundle",
       "item.bc.amethyst_trowel": "Amethyst Trowel",
       "item.bc.mob_bag": "Mob Bag",
       "item.bc.void_bucket": "Void Bucket",
       "item.bc.hard_hat_helmet": "Hard Hat",
-      "item.bc.prismarine_chisel": "Prismarine Chisel"
+      "item.bc.prismarine_chisel": "Prismarine Chisel",
+      "item.bc.antitool": "Antitool",
+      "enchantment.bc.photosynthesis": "Photosynthesis"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/gavirium/bc/init/BcModBrewingRecipes.java",
       "src/main/java/net/gavirium/bc/init/BcModItems.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/gavirium/bc/init/BcModTabs.java",
@@ -231,15 +264,18 @@
     "modid": "bc",
     "modName": "Beyond Creation",
     "version": "1.0.0",
-    "author": "MCreator",
-    "websiteURL": "https://mcreator.net",
+    "author": "Gavirium",
+    "websiteURL": "https://github.com/Gavirium/Beyond-Creation-1.21.1-neoforge",
     "license": "Not specified",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Textures and code by Gavirium",
     "modElementsPackage": "net.gavirium.bc"
   },
   "mcreatorVersion": 202500345720

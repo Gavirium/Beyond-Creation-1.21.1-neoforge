@@ -16,7 +16,16 @@
         "value": ""
       },
       {
-        "value": "Items.PRISMARINE_SHARD"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
@@ -28,22 +37,13 @@
         "value": "Items.IRON_NUGGET"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
+        "value": "Items.AMETHYST_SHARD"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:PrismarineChisel"
+      "value": "CUSTOM:AmethystTrowel"
     },
-    "name": "prismarine_chisel",
+    "name": "amethyst_trowel",
     "namespace": "mod"
   }
 }

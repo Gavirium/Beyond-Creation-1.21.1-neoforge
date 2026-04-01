@@ -1,10 +1,11 @@
 {
-  "item.bc.antitool": "Antitool",
   "item_group.bc.bc_tab": "Beyond Creation",
   "item.bc.void_bundle": "Void Bundle",
   "item.bc.amethyst_trowel": "Amethyst Trowel",
   "item.bc.mob_bag": "Mob Bag",
   "item.bc.void_bucket": "Void Bucket",
   "item.bc.hard_hat_helmet": "Hard Hat",
-  "item.bc.prismarine_chisel": "Prismarine Chisel"
+  "item.bc.prismarine_chisel": "Prismarine Chisel",
+  "item.bc.antitool": "Antitool",
+  "enchantment.bc.photosynthesis": "Photosynthesis"
 }

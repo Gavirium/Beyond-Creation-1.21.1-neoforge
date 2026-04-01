@@ -2,23 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a",
-    "b",
-    "c"
+    "a  ",
+    " bc"
   ],
   "key": {
     "a": {
-      "item": "minecraft:prismarine_shard"
+      "item": "minecraft:stick"
     },
     "b": {
       "item": "minecraft:iron_nugget"
     },
     "c": {
-      "item": "minecraft:stick"
+      "item": "minecraft:amethyst_shard"
     }
   },
   "result": {
-    "id": "bc:prismarine_chisel",
+    "id": "bc:amethyst_trowel",
     "count": 1
   }
 }

@@ -6,9 +6,9 @@ license="Not specified"
 modId="bc"
 version="1.0.0"
 displayName="Beyond Creation"
-displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="MCreator"
+displayURL="https://github.com/Gavirium/Beyond-Creation-1.21.1-neoforge"
+credits="Textures and code by Gavirium"
+authors="Gavirium"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -32,6 +32,12 @@ authors="MCreator"
     side="BOTH"
 
 
+[[dependencies.bc]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration

@@ -17,6 +17,7 @@ public class BcModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BcMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BC_TAB = REGISTRY.register("bc_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.bc.bc_tab")).icon(() -> new ItemStack(BcModItems.ANTITOOL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(BcModItems.BRASSMARK.get());
 				tabData.accept(BcModItems.AMETHYST_TROWEL.get());
 				tabData.accept(BcModItems.PRISMARINE_CHISEL.get());
 				tabData.accept(BcModItems.HARD_HAT_HELMET.get());

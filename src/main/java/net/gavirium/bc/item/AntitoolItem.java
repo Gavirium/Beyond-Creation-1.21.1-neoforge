@@ -55,7 +55,7 @@ public class AntitoolItem extends TieredItem {
 
         @Override
         public int getEnchantmentValue() {
-            return 2;
+            return 22;
         }
 
         @Override

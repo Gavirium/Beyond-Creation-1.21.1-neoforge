@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bc:item/coin/brassmark_1"
+  },
+  "overrides": [
+    { "predicate": { "bc:count_level": 2 }, "model": "bc:item/brassmark_2" },
+    { "predicate": { "bc:count_level": 3 }, "model": "bc:item/brassmark_3" },
+    { "predicate": { "bc:count_level": 4 }, "model": "bc:item/brassmark_4" },
+    { "predicate": { "bc:count_level": 33 }, "model": "bc:item/brassmark_5"}
+  ]
+}

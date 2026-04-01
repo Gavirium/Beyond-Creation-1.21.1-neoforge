@@ -19,11 +19,21 @@ public class ClientModEvents {
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
 
+            // Property: has_mob
             ItemProperties.register(
                     BcModItems.MOB_BAG.get(),
                     ResourceLocation.fromNamespaceAndPath(BcMod.MODID, "has_mob"),
                     (stack, level, entity, seed) -> {
                         return MobBagItem.hasMob(stack) ? 1.0F : 0.0F;
+                    }
+            );
+
+            // Property: count_level
+            ItemProperties.register(
+                    BcModItems.BRASSMARK.get(),
+                    ResourceLocation.fromNamespaceAndPath(BcMod.MODID, "count_level"),
+                    (stack, level, entity, seed) -> {
+                        return (float) stack.getCount();
                     }
             );
 

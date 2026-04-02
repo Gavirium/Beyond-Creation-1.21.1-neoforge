@@ -197,6 +197,19 @@
           "src/main/java/net/gavirium/bc/item/BrassmarkItem.java"
         ]
       }
+    },
+    {
+      "name": "Wallet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wallet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gavirium/bc/item/WalletItem.java",
+          "src/main/resources/assets/bc/models/item/wallet.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -224,13 +237,14 @@
   "tab_element_order": {
     "CUSTOM:BcTab": [
       "Brassmark",
+      "Wallet",
+      "Antitool",
       "AmethystTrowel",
       "PrismarineChisel",
       "HardHat",
       "VoidBucket",
       "VoidBundle",
-      "MobBag",
-      "Antitool"
+      "MobBag"
     ]
   },
   "language_map": {
@@ -242,9 +256,10 @@
       "item.bc.void_bucket": "Void Bucket",
       "item.bc.hard_hat_helmet": "Hard Hat",
       "item.bc.prismarine_chisel": "Prismarine Chisel",
-      "item.bc.antitool": "Antitool",
+      "item.bc.antitool": "§aExperium",
       "enchantment.bc.photosynthesis": "Photosynthesis",
-      "item.bc.brassmark": "Brassmark"
+      "item.bc.brassmark": "Brassmark",
+      "item.bc.wallet": "Wallet"
     }
   },
   "metadata": {

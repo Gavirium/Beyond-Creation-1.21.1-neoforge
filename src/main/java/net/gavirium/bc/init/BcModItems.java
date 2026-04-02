@@ -21,6 +21,7 @@ public class BcModItems {
 	public static final DeferredItem<Item> PRISMARINE_CHISEL;
 	public static final DeferredItem<Item> ANTITOOL;
 	public static final DeferredItem<Item> BRASSMARK;
+	public static final DeferredItem<Item> WALLET;
 	static {
 		VOID_BUNDLE = REGISTRY.register("void_bundle", VoidBundleItem::new);
 		AMETHYST_TROWEL = REGISTRY.register("amethyst_trowel", AmethystTrowelItem::new);
@@ -30,6 +31,7 @@ public class BcModItems {
 		PRISMARINE_CHISEL = REGISTRY.register("prismarine_chisel", PrismarineChiselItem::new);
 		ANTITOOL = REGISTRY.register("antitool", AntitoolItem::new);
 		BRASSMARK = REGISTRY.register("brassmark", BrassmarkItem::new);
+		WALLET = REGISTRY.register("wallet", WalletItem::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items

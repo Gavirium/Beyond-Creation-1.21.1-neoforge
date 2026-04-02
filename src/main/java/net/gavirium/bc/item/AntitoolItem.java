@@ -27,6 +27,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
+import net.minecraft.client.Minecraft;
+
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 
@@ -125,7 +127,6 @@ public class AntitoolItem extends TieredItem {
 
         if (player == null) return InteractionResult.PASS;
 
-        // Prevent weird behavior clicking underside
         if (context.getClickedFace() == Direction.DOWN) {
             return InteractionResult.PASS;
         }
@@ -134,7 +135,6 @@ public class AntitoolItem extends TieredItem {
 
         if (!level.isClientSide) {
 
-            // STRIP LOGS
             BlockState stripped = state.getToolModifiedState(context, ItemAbilities.AXE_STRIP, false);
 
             if (stripped != null) {
@@ -147,13 +147,11 @@ public class AntitoolItem extends TieredItem {
                 return InteractionResult.SUCCESS;
             }
             
-            // SOIL INTERACTIONS
             if (level.getBlockState(pos.above()).isAir()) {
 
                 boolean crouching = player.isCrouching();
 
                 if (crouching) {
-                    // FARMLAND
                     BlockState farmland = state.getToolModifiedState(context, ItemAbilities.HOE_TILL, false);
 
                     if (farmland != null) {
@@ -167,7 +165,6 @@ public class AntitoolItem extends TieredItem {
                     }
 
                 } else {
-                    // PATH
                     BlockState path = state.getToolModifiedState(context, ItemAbilities.SHOVEL_FLATTEN, false);
 
                     if (path != null) {
@@ -184,5 +181,38 @@ public class AntitoolItem extends TieredItem {
         }
 
         return InteractionResult.PASS;
+    }
+
+    // Animated durability bar
+    @Override
+    public int getBarColor(ItemStack stack) {
+        var mc = Minecraft.getInstance();
+        if (mc.level == null) {
+            return 0xFFFFFF;
+        }
+
+        // Smooth animation using game ticks
+        long time = mc.level.getGameTime();
+        float periodTicks = 100f;
+        float t = (float) ((Math.sin((2 * Math.PI * time) / periodTicks) + 1) / 2.0);
+        int colorA = 0x32f432; // green
+        int colorB = 0x800080; // purple
+        return interpolateColor(colorA, colorB, t);
+    }
+
+    private int interpolateColor(int colorA, int colorB, float t) {
+        int rA = (colorA >> 16) & 0xFF;
+        int gA = (colorA >> 8) & 0xFF;
+        int bA = colorA & 0xFF;
+
+        int rB = (colorB >> 16) & 0xFF;
+        int gB = (colorB >> 8) & 0xFF;
+        int bB = colorB & 0xFF;
+
+        int r = (int) (rA + (rB - rA) * t);
+        int g = (int) (gA + (gB - gA) * t);
+        int b = (int) (bA + (bB - bA) * t);
+
+        return (r << 16) | (g << 8) | b;
     }
 }

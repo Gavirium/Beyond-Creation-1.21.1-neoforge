@@ -6,7 +6,8 @@
   "item.bc.void_bucket": "Void Bucket",
   "item.bc.hard_hat_helmet": "Hard Hat",
   "item.bc.prismarine_chisel": "Prismarine Chisel",
-  "item.bc.antitool": "Antitool",
+  "item.bc.antitool": "§aExperium",
   "enchantment.bc.photosynthesis": "Photosynthesis",
-  "item.bc.brassmark": "Brassmark"
+  "item.bc.brassmark": "Brassmark",
+  "item.bc.wallet": "Wallet"
 }
